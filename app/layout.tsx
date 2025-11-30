@@ -1,7 +1,22 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { GeistSans } from "geist/font/sans";
+import localFont from "next/font/local";
 import Script from "next/script";
+
+const notoSans = localFont({
+  src: [
+    { path: "../public/font/NotoSansGeorgian-Thin.ttf", weight: "100", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-ExtraLight.ttf", weight: "200", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-Light.ttf", weight: "300", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-Regular.ttf", weight: "400", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-Medium.ttf", weight: "500", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-SemiBold.ttf", weight: "600", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-Bold.ttf", weight: "700", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-ExtraBold.ttf", weight: "800", style: "normal" },
+    { path: "../public/font/NotoSansGeorgian-Black.ttf", weight: "900", style: "normal" },
+  ],
+  variable: "--font-noto-sans",
+});
 
 export const viewport: Viewport = {
   themeColor: "#f97316",
@@ -76,7 +91,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#f97316" />
         <meta name="theme-color" content="#f97316" />
       </head>
-      <body className={`${GeistSans.className}`}>{children}</body>
+      <body className={`${notoSans.className}`}>{children}</body>
     </html>
   );
 }
