@@ -79,7 +79,7 @@ export const pdfUtils = StyleSheet.create({
 
 export const pdfContainers = StyleSheet.create({
     page: {
-        fontFamily: "Geist",
+        fontFamily: "NotoSansGeorgian",
     },
     invoiceTerms: {
         paddingHorizontal: 40,

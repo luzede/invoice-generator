@@ -112,38 +112,38 @@ export const DownloadInvoiceButton = () => {
 };
 
 Font.register({
-  family: "Geist",
+  family: "NotoSansGeorgian",
   fonts: [
     {
-      src: "/font/Geist-Thin.ttf",
+      src: "/font/NotoSansGeorgian-Thin.ttf",
       fontWeight: "thin",
     },
     {
-      src: "/font/Geist-Ultralight.ttf",
+      src: "/font/NotoSansGeorgian-ExtraLight.ttf",
       fontWeight: "ultralight",
     },
     {
-      src: "/font/Geist-Light.ttf",
+      src: "/font/NotoSansGeorgian-Light.ttf",
       fontWeight: "light",
     },
     {
-      src: "/font/Geist-Regular.ttf",
+      src: "/font/NotoSansGeorgian-Regular.ttf",
       fontWeight: "normal",
     },
     {
-      src: "/font/Geist-Medium.ttf",
+      src: "/font/NotoSansGeorgian-Medium.ttf",
       fontWeight: "medium",
     },
     {
-      src: "/font/Geist-SemiBold.ttf",
+      src: "/font/NotoSansGeorgian-SemiBold.ttf",
       fontWeight: "semibold",
     },
     {
-      src: "/font/Geist-Bold.ttf",
+      src: "/font/NotoSansGeorgian-Bold.ttf",
       fontWeight: "bold",
     },
     {
-      src: "/font/Geist-UltraBlack.ttf",
+      src: "/font/NotoSansGeorgian-ExtraBold.ttf",
       fontWeight: "ultrabold",
     },
   ],
